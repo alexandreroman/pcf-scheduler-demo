@@ -1,0 +1,10 @@
+---
+applications:
+  - name: pcf-scheduler-demo
+    path: target/pcf-scheduler-demo.jar
+    no-route: true
+    instances: 0
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
+    services:
+      - scheduler
